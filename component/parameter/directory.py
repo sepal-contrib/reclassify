@@ -8,3 +8,4 @@ module_dir.mkdir(exist_ok=True)
 
 # add all the directory that will be used in the app.
 result_dir = module_dir / "reclassification"
+result_dir.mkdir(exist_ok=True)

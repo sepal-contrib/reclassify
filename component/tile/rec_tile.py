@@ -12,5 +12,11 @@ class RecTile(sw.Tile):
         super().__init__(
             id_=f"rec_{txt}_tile",
             title=f"Reclassify {txt} asset",
-            inputs=[rec.ReclassifyView(out_path=cp.result_dir, gee=gee).nest_tile()],
+            inputs=[
+                rec.ReclassifyView(
+                    out_path=cp.result_dir,
+                    gee=gee,
+                    default_class=cp.default_classification,
+                ).nest_tile()
+            ],
         )
