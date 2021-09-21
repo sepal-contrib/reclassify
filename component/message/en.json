@@ -4,7 +4,10 @@
         "title": "reclassification tool",
         "footer": "The sky is the limit \u00a9 {}",
         "drawer_item": {
-            "about": "About"
+            "about": "About",
+            "table": "create classification",
+            "rec_gee": "reclassify GEE asset",
+            "rec_local": "reclassify local asset"
         }
     }
 }
